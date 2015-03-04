@@ -45,9 +45,9 @@ public class ProviderInfo implements Serializable {
 
 	private Date time;
 
-	private List<Stock> tbStock;
+	private List<Stock> stock;
 
-	private List<StockReturn> tbStockReturn;
+	private List<StockReturn> stockReturn;
 
 	private List<GoodInfo> goodInfo;
 
@@ -187,20 +187,20 @@ public class ProviderInfo implements Serializable {
 		this.time = time;
 	}
 
-	public List<Stock> getTbStock() {
-		return tbStock;
+	public List<Stock> getStock() {
+		return stock;
 	}
 
-	public void setTbStock(List<Stock> tbStock) {
-		this.tbStock = tbStock;
+	public void setStock(List<Stock> stock) {
+		this.stock = stock;
 	}
 
-	public List<StockReturn> getTbStockReturn() {
-		return tbStockReturn;
+	public List<StockReturn> getStockReturn() {
+		return stockReturn;
 	}
 
-	public void setTbStockReturn(List<StockReturn> tbStockReturn) {
-		this.tbStockReturn = tbStockReturn;
+	public void setStockReturn(List<StockReturn> stockReturn) {
+		this.stockReturn = stockReturn;
 	}
 
 	public List<GoodInfo> getGoodInfo() {

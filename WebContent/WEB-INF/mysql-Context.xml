@@ -64,5 +64,131 @@
 		<aop:advisor advice-ref="myAdvice" pointcut-ref="myServiceMethod"/>
 	</aop:config>
 	
+	
+	
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="druid" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+<property name="mappingResources">
+	<list>
+		<value>
+			org/mo/jims/coop/entity/TbStockReturn.hbm.xml
+		</value>
+		<value>org/mo/jims/coop/entity/TbUserLog.hbm.xml</value>
+		<value>org/mo/jims/coop/entity/TbSellReturn.hbm.xml</value>
+		<value>org/mo/jims/coop/entity/TbPermission.hbm.xml</value>
+		<value>
+			org/mo/jims/coop/entity/TbInventoryInfo.hbm.xml
+		</value>
+		<value>org/mo/jims/coop/entity/TbSell.hbm.xml</value>
+		<value>
+			org/mo/jims/coop/entity/TbProviderInfo.hbm.xml
+		</value>
+		<value>org/mo/jims/coop/entity/TbGoodInfo.hbm.xml</value>
+		<value>org/mo/jims/coop/entity/TbRole.hbm.xml</value>
+		<value>
+			org/mo/jims/coop/entity/TbCustomerInfo.hbm.xml
+		</value>
+		<value>org/mo/jims/coop/entity/TbStock.hbm.xml</value>
+		<value>org/mo/jims/coop/entity/TbUser.hbm.xml</value>
+	</list>
+</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="TbStockReturnDAO"
+		class="org.mo.jims.coop.dao.TbStockReturnDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbUserLogDAO" class="org.mo.jims.coop.dao.TbUserLogDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbSellReturnDAO"
+		class="org.mo.jims.coop.dao.TbSellReturnDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbPermissionDAO"
+		class="org.mo.jims.coop.dao.TbPermissionDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbInventoryInfoDAO"
+		class="org.mo.jims.coop.dao.TbInventoryInfoDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbSellDAO" class="org.mo.jims.coop.dao.TbSellDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbRolePermissionDAO"
+		class="org.mo.jims.coop.dao.TbRolePermissionDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbProviderInfoDAO"
+		class="org.mo.jims.coop.dao.TbProviderInfoDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbGoodInfoDAO"
+		class="org.mo.jims.coop.dao.TbGoodInfoDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbUserRoleDAO"
+		class="org.mo.jims.coop.dao.TbUserRoleDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbRoleDAO" class="org.mo.jims.coop.dao.TbRoleDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbCustomerInfoDAO"
+		class="org.mo.jims.coop.dao.TbCustomerInfoDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbStockDAO" class="org.mo.jims.coop.dao.TbStockDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TbUserDAO" class="org.mo.jims.coop.dao.TbUserDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
 	<import resource="dataSource-Context.xml" />
 </beans>

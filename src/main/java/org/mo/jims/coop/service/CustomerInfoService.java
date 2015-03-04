@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 public class CustomerInfoService {
 
 	private CustomerInfoRepository customerInfoRepository;
+	
 
 	public List<String> getAllCustomerName() {
 		return customerInfoRepository.selectAllCustomerName();
@@ -74,7 +75,7 @@ public class CustomerInfoService {
 			String name = entity.getName();
 			CustomerInfo selectByName = customerInfoRepository.selectByName(name);
 			if (selectByName == null) {
-				customerInfoRepository.insert(entity);
+//				customerInfoRepository.insert(entity);
 				return true;
 			}
 		}

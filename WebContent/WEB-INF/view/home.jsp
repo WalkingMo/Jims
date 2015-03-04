@@ -79,7 +79,7 @@
         </div><!--.alert alert-block alert-success  -->
        <div class="row">
          <div class="space-6"></div>
-         <div class="col-sm-7 infobox-container">
+         <!-- <div class="col-sm-7 infobox-container">
              <div class="infobox infobox-green">
                <div class="infobox-icon"> <i class="icon-list-alt"></i> </div> 
                <div class="infobox-data"> 
@@ -88,7 +88,7 @@
               </div>
               <div class="stat stat-success" id="home-percent-inventory-day"></div> 
             </div><!--.infobox infobox-green  -->
-            <div class="infobox infobox-blue">
+            <!--<div class="infobox infobox-blue">
               <div class="infobox-icon"><i class="icon-shopping-cart"></i> </div> 
               <div class="infobox-data"> 
                 <span class="infobox-data-number">1</span> 
@@ -96,7 +96,7 @@
              </div> 
              <div class="stat stat-important">4%</div> 
            </div><!--.infobox infobox-blue  -->
-            <div class="infobox infobox-blue">
+            <!--<div class="infobox infobox-blue">
               <div class="infobox-icon"><i class="icon-shopping-cart"></i> </div> 
               <div class="infobox-data"> 
                 <span class="infobox-data-number">2</span> 
@@ -104,7 +104,7 @@
              </div> 
              <div class="stat stat-important">4%</div> 
            </div><!--.infobox infobox-blue  -->
-           <div class="infobox infobox-pink">
+           <!--<div class="infobox infobox-pink">
               <div class="infobox-icon"><i class="icon-shopping-cart"></i> </div> 
               <div class="infobox-data"> 
                 <span class="infobox-data-number">3</span> 
@@ -112,7 +112,7 @@
               </div> 
               <div class="stat stat-important">4%</div> 
            </div><!--.infobox infobox-pink  -->
-           <div class="infobox infobox-pink">
+           <!--<div class="infobox infobox-pink">
               <div class="infobox-icon"><i class="icon-shopping-cart"></i> </div> 
               <div class="infobox-data"> 
                 <span class="infobox-data-number">4</span> 
@@ -120,15 +120,15 @@
               </div> 
               <div class="stat stat-important">4%</div> 
            </div><!--.infobox infobox-pink  -->
-           <div class="infobox infobox-red">
+           <!--<div class="infobox infobox-red">
               <div class="infobox-icon"><i class="icon-beaker"></i> </div> 
               <div class="infobox-data"> 
                 <span class="infobox-data-number">4</span> 
                 <div class="infobox-content">其他</div> 
               </div> 
            </div><!--.infobox infobox-red  -->
-          </div><!--.col-sm-7 infobox-container  -->
-          <div class="vspace-sm"></div>
+          <!--</div><!--.col-sm-7 infobox-container  -->
+          <!--<div class="vspace-sm"></div>
           <div class="col-sm-5">
           <sec:authorize access="hasRole('admin')">
             <div class="widget-box">
@@ -145,18 +145,18 @@
                     <li ><a href="#" class="blue"><i class="icon-caret-right bigger-110">&nbsp;</i>上月</a></li>
                   </ul>
                 </div><!--.widget-toolbar no-border  -->
-              </div><!--.widget-header widget-header-flat widget-header-small  -->
-              <div class="widget-body">
+              <!--</div><!--.widget-header widget-header-flat widget-header-small  -->
+              <!--<div class="widget-body">
                 <div class="widget-main">
                   <div id="piechart-placeholder"></div>
                   <div class="hr hr8 hr-double"></div>
                 </div>
               </div><!--widget-body  -->
-            </div><!--widget-box  -->
-           </sec:authorize>
+            <!--</div><!--widget-box  -->
+           <!--</sec:authorize>
           </div><!--.col-sm-5 -->
-       </div><!--.row  -->
-       <div class="hr hr32 hr-dotted"></div>
+       <!--</div><!--.row  -->
+       <!--<div class="hr hr32 hr-dotted"></div>
           <div class="row">
             <div class="col-sm-5">
               <div class="widget-box transparent">
@@ -164,7 +164,7 @@
                   <h4 class="lighter"><i class="icon-star orange"></i>热门销售</h4>
                   <div class="widget-toolbar"><a data-action="collapse" href="#"><i class="icon-chevron-up"></i></a></div>
                 </div><!--.widget-header widget-header-flat  -->
-                <div class="widget-body">
+               <!-- <div class="widget-body">
                   <div class="widget-body-inner" style="display: block;">
                     <div class="widget-main no-padding">
                       <table class="table table-bordered table-striped">
@@ -184,11 +184,11 @@
                         </tbody>
                       </table>
                     </div><!--.widget-main no-padding  -->
-                  </div><!--.widget-body-inner  -->
-                </div><!--.widget-body  -->
-              </div><!--.widget-box transparent  -->
-            </div><!--.col-sm-5  -->
-            <div class="col-sm-7">
+                 <!-- </div><!--.widget-body-inner  -->
+               <!-- </div><!--.widget-body  -->
+              <!--</div><!--.widget-box transparent  -->
+            <!--</div><!--.col-sm-5  -->
+           <!-- <div class="col-sm-7">
             <sec:authorize access="hasRole('admin')">
               <div id="recent-box" class="widget-box transparent">
                 <div class="widget-header">
@@ -200,8 +200,8 @@
                       <li ><a href="#task-user" data-toggle="tab">工作人员</a></li>
                     </ul>
                   </div><!--widget-toolbar no-border  -->
-                </div><!--.widget-header  -->
-                <div class="widget-body">
+              <!--  </div><!--.widget-header  -->
+             <!--   <div class="widget-body">
                   <div class="widget-main padding-4">
                     <div class="tab-content padding-8 overflow-visible">
                       <div id="task-sell" class="tab-pane active">
@@ -216,17 +216,17 @@
                               </div>
                             </div>
                           </div><!--comments  -->
-                        </div><!--.slimScrollDiv  -->
-                      </div><!--#task-sell  -->
-                      <div id="task-stock" class="tab-pane">我是进货</div>
+                   <!--     </div><!--.slimScrollDiv  -->
+                  <!--    </div><!--#task-sell  -->
+                  <!--    <div id="task-stock" class="tab-pane">我是进货</div>
                       <div id="task-user" class="tab-pane">我是工作人员</div>
                     </div><!--.tab-content padding-8 overflow-visible  -->
-                  </div><!--.widget-main padding-4  -->
-                </div><!--.widget-body  -->
-              </div><!--#recent-box  -->
-              </sec:authorize>
+             <!--     </div><!--.widget-main padding-4  -->
+           <!--     </div><!--.widget-body  -->
+            <!--  </div><!--#recent-box  -->
+        <!--      </sec:authorize>
             </div><!--.col-sm-6  -->
-       </div><!--.row  -->
+     <!--  </div><!--.row  -->
        <div id="qzcode" class="hide"></div>
        <div class="hide"><img alt="条形码" src="barcode?msg=9787302337416" height="50px" width=130px/> </div>
        <script type="text/javascript">
@@ -330,7 +330,7 @@
     <!-- /#ace-settings-container --> 
    </div> 
    <!-- /.main-container-inner --> 
-   <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse"> <i class="icon-double-angle-up icon-only bigger-110"></i> </a> 
+   <!-- <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse"> <i class="icon-double-angle-up icon-only bigger-110"></i> </a>  -->
   </div>  
  </body>
 </html>
