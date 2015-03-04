@@ -5,9 +5,11 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.mo.jims.coop.dao.TbCustomerInfoDAO;
 import org.mo.jims.coop.entity.CustomerInfo;
 import org.mo.jims.coop.repository.CustomerInfoRepository;
 import org.mo.open.common.util.Page;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service("customerInfoService")
@@ -15,7 +17,9 @@ public class CustomerInfoService {
 
 	private CustomerInfoRepository customerInfoRepository;
 	
-
+	@Autowired
+	private TbCustomerInfoDAO dao;
+	
 	public List<String> getAllCustomerName() {
 		return customerInfoRepository.selectAllCustomerName();
 	}
@@ -75,6 +79,7 @@ public class CustomerInfoService {
 			String name = entity.getName();
 			CustomerInfo selectByName = customerInfoRepository.selectByName(name);
 			if (selectByName == null) {
+				dao.save(entity);
 //				customerInfoRepository.insert(entity);
 				return true;
 			}

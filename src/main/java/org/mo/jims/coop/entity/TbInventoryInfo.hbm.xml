@@ -8,7 +8,7 @@
     <class name="org.mo.jims.coop.entity.InventoryInfo" table="tb_inventory_info" catalog="db_jims">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
-            <generator class="native" />
+            <generator class="assigned" />
         </id>
         <many-to-one name="goodInfo" class="org.mo.jims.coop.entity.GoodInfo" fetch="select">
             <column name="good_id" length="50" not-null="true">

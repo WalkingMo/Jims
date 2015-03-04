@@ -110,6 +110,8 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 	
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
 	<bean id="TbStockReturnDAO"
 		class="org.mo.jims.coop.dao.TbStockReturnDAO">
 		<property name="sessionFactory">

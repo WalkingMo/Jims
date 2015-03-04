@@ -7,7 +7,7 @@
 		catalog="db_jims">
 		<id name="account" type="java.lang.String">
 			<column name="account" length="50" />
-			<generator class="native" />
+			<generator class="assigned" />
 		</id>
 		<property name="username" type="java.lang.String">
 			<column name="username" length="50" not-null="true" unique="true">
