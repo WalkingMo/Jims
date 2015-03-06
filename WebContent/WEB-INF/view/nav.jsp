@@ -36,17 +36,17 @@
        </ul></li> 
       <li id="depotManage"><a href="#" class="dropdown-toggle"> <i class="icon-edit"></i> <span class="menu-text"> <%=configBundle.getString("depotManage") %> </span> <b class="arrow icon-angle-down"></b> </a> 
        <ul class="submenu">
-       <sec:authorize access="hasRole('admin')">
+       <%-- <sec:authorize access="hasRole('admin')">
         <li id="KuCunPanDian"><a href="coop/kucunpandian.html"> <i class="icon-double-angle-right"></i> <%=configBundle.getString("KuCunPanDian") %> </a></li> 
        </sec:authorize>
-       <li id="JiaGeTiaoZheng"><a href="coop/jiagetiaozheng.html"> <i class="icon-double-angle-right"></i> <%=configBundle.getString("JiaGeTiaoZheng") %> </a></li> 
+       <li id="JiaGeTiaoZheng"><a href="coop/jiagetiaozheng.html"> <i class="icon-double-angle-right"></i> <%=configBundle.getString("JiaGeTiaoZheng") %> </a></li>  --%>
        </ul></li>
      <sec:authorize access="hasRole('admin')">
       <li id="sysManage"><a href="#" class="dropdown-toggle"> <i class="icon-tag"></i> <span class="menu-text"> <%=configBundle.getString("sysManage") %> </span> <b class="arrow icon-angle-down"></b> </a> 
        <ul class="submenu"> 
-        <li id="CaoZuoYuanGuanLi"><a href="admin/caozuoyuanguanli.html"> <i class="icon-double-angle-right"></i> <%=configBundle.getString("CaoZuoYuanGuanLi") %> </a></li> 
+<%--         <li id="CaoZuoYuanGuanLi"><a href="admin/caozuoyuanguanli.html"> <i class="icon-double-angle-right"></i> <%=configBundle.getString("CaoZuoYuanGuanLi") %> </a></li> 
         <li id="JueSeGuanLi"><a href="admin/jueseguanli.html"> <i class="icon-double-angle-right"></i><%=configBundle.getString("jueseguanli") %> </a></li> 
-        <li id="QuanXianGuanLi"><a href="admin/quanxianguanli.html"> <i class="icon-double-angle-right"></i> <%=configBundle.getString("QuanXianGuanLi") %> </a></li> 
+        <li id="QuanXianGuanLi"><a href="admin/quanxianguanli.html"> <i class="icon-double-angle-right"></i> <%=configBundle.getString("QuanXianGuanLi") %> </a></li>  --%>
        </ul></li>
       </sec:authorize>
      </ul>
